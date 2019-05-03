@@ -33,7 +33,6 @@ class TodoForm extends React.Component {
     this.setState({
       passedValues: this.state.passedValues.filter(todo => todo.id !== id)
     })
-    console.log(this.state.passedValues)
   }
 
   render() {
