@@ -41,7 +41,10 @@ export default class TodoList extends Component {
             name="inputValue"
             onChange={this.handleChange}
           />
+          <div className='buttons-wrapper'>
+          <div className="todos-left">Todos left: {this.props.passedValues.filter(todo => !todo.complete).length} </div>
           <button className="submitBtn">Add #{this.props.passedValues.length + 1}</button>
+          </div>
         </form>
       </div>
     )

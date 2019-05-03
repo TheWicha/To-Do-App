@@ -47,18 +47,32 @@ body{
 }
 
 .todo ol li span {
-  padding-left: 30px;
+  padding: 0 30px;
 }
 
 .todo ol li i {
     cursor: pointer; 
 }
 
+.todo ol li i:hover {
+  opacity: 0.9;
+  
+}
+.fa-check:hover {
+  color: #5CBF2A;
+}
+.fa-check {
+  margin-left: 5px;
+}
+.fa-trash-alt:hover {
+  color:red;
+}
 .todo input{
   width: 500px;
   height: 50px;
   font-size: 1.4em;
-  margin-top: 20px;
+  border: 0px;
+  outline: none;
 }
 
 .newForm{
@@ -66,11 +80,28 @@ body{
   flex-direction: column;
   align-items: center;
 }
-
+.buttons-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: default;
+  
+}
+.todos-left {
+  margin-top:15px;
+  border-radius:28px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+  text-decoration:none;
+  background-color:#44c767;
+  text-shadow:0px 1px 0px #2f6627;
+}
 .submitBtn {
   margin-top:15px;
-  width: 40%;
-  font-size: 1.2em;
 	background-color:#44c767;
 	border-radius:28px;
 	border:1px solid #18ab29;
@@ -80,7 +111,6 @@ body{
 	font-family:Arial;
 	font-size:17px;
 	padding:16px 31px;
-	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
 }
 .submitBtn:hover {
@@ -94,4 +124,3 @@ body{
 .submitBtn:focus {
   outline: none;
 }
-
