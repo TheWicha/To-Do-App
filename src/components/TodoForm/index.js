@@ -21,7 +21,7 @@ class TodoForm extends React.Component {
     this.setState({
       passedValues: this.state.passedValues.map(todo => {
         if (todo.id === id) {
-          return {...todo, complete: !todo.complete};
+          return { ...todo, complete: !todo.complete };
         } else {
           return todo;
         }
@@ -42,16 +42,16 @@ class TodoForm extends React.Component {
         <h3>ToDo</h3>
         <p>What needs to be done?</p>
         <div className='list-wrapper'>
-        <ol>
-          {passedValues.map((item) => (
-            <Todo
-              key={item.id}
-              item={item}
-              toggleComplete={() => this.toggleComplete(item.id)}
-              onDelete={() => this.handleDeleteTodo(item.id)}
-            />
-          ))}
-        </ol>
+          <ol>
+            {passedValues.map((item) => (
+              <Todo
+                key={item.id}
+                item={item}
+                toggleComplete={() => this.toggleComplete(item.id)}
+                onDelete={() => this.handleDeleteTodo(item.id)}
+              />
+            ))}
+          </ol>
         </div>
         <TodoList passedValues={passedValues} onSubmit={this.addTodo} />
       </div>
