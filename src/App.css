@@ -1,33 +1,97 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #31b0d5;
+  height: 100vh;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo h3 {
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 5em;
 }
+
+.todo p {
+  font-size: 2em;
+}
+
+.todo ol {
+  padding: 0;
+  min-width: 200px;
+  list-style: none;
+}
+
+.todo ol li {
+  display: flex;
+  justify-content: space-between;
+  min-width: 500px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 5px 0px 5px 0px;
+}
+
+.todo ol li span {
+  padding-left: 30px;
+}
+
+.todo ol li i {
+    cursor: pointer; 
+}
+
+.todo input{
+  width: 500px;
+  height: 50px;
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+
+.newForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submitBtn {
+  margin-top:15px;
+  width: 40%;
+  font-size: 1.2em;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.submitBtn:hover {
+	background-color:#5cbf2a;
+}
+.submitBtn:active {
+	position:relative;
+	top:1px;
+}
+
+.submitBtn:focus {
+  outline: none;
+}
+
