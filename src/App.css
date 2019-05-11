@@ -47,11 +47,13 @@ body{
 }
 
 .todo ol li span {
-  padding: 0 30px;
+  padding-left: 5px;
+  padding-right: 30px;
 }
 
-.todo ol li i {
+.todo-icons i {
     cursor: pointer; 
+    padding-left: 20px;
 }
 
 .todo ol li i:hover {
